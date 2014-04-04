@@ -6,7 +6,7 @@ from klaus import views
 
 # TODO: These regexps are probably not going to cover all the cases
 repo = r'(?P<repo>[\w\.\-_]+)'
-rev = r'(?P<rev>[\w\.\-_]+)'
+rev = r'(?P<rev>[\w\@\.\-_]+)'
 path = r'(?P<path>.+)'
 
 
