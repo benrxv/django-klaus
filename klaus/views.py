@@ -79,7 +79,7 @@ class BaseRepoView(KlausTemplateView):
             if rev is None:
                 raise RepoException("Empty repository")
         try:
-            commit = repo.get_commit(rev)
+            commit = repo.get_commit(str(rev))
         except KeyError:
             raise RepoException("No such commit %r" % rev)
 
